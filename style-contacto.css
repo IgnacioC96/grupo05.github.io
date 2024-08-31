@@ -1,0 +1,214 @@
+@import url("https://fonts.googleapis.com/css2? family= Poppins:wght@100;400;700 & display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Belanosima:wght@400;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=New+Amsterdam&display=swap");
+
+* {
+  padding: 0; /*saco los margenes de todos los elementos para que no queden lugares en blanco*/
+  margin: 0; /*saco los margenes de todos los elementos para que no queden lugares en blanco*/
+  text-decoration: none; /*saco el subrayado de todos los elementos*/
+  list-style: none; /*elimino las vinetas de las listas*/
+  box-shadow: border-box; /*contengo a los elementos para que no salgan de su contenedor*/
+  font-family: "New Amsterdam", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+img {
+  max-width: 100%;
+  max-height: auto;
+}
+
+header {
+  min-height: 100vh;
+  background-image: url(https://img.freepik.com/vector-gratis/fondo-tecnologia-digital-efecto-luz-azul-naranja_1017-27423.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  margin: 0;
+  padding: 0;
+}
+header img {
+  width: 100%;
+}
+
+@media screen and (min-width: 320px) {
+  h1, h2  {
+    font-family: "New Amsterdam", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    text-align: center;
+  }
+
+  h1 {
+    font-size: 5rem;
+    margin-top: 0;
+    color: #f53302;
+    text-shadow: 1px 1px 2px rgb(238, 231, 231), 0 0 1em rgb(55, 55, 134),
+      0 0 0.2em rgb(3, 126, 89);
+    text-align: center;
+  }
+
+  h2{
+    font-size: 2.5rem;
+    margin-top: 0;
+    color: #f53302;
+    text-shadow: 1px 1px 2px rgb(238, 231, 231), 0 0 1em rgb(55, 55, 134),
+      0 0 0.2em rgb(3, 126, 89);
+    text-align: center;
+  }
+
+  form {
+    font-family: "New Amsterdam", sans-serif;
+    background-image: url(https://img.freepik.com/vector-gratis/fondo-tecnologia-digital-efecto-luz-azul-naranja_1017-27423.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    padding: 1.8rem;
+    margin: 0.5rem;
+    border-radius: 1em;
+    display: flex;
+    flex-direction: column;
+    align-content: start;
+    text-align: start;
+  }
+
+  label {
+    font-family: "New Amsterdam", sans-serif;
+    margin-top: 1rem;
+    color: #eff5f5;
+    font-size: 1.5rem;
+  }
+
+  input {
+    margin-top: 0.3rem;
+    padding: 0.5em;
+    border-radius: 0.5em;
+    font-size: 1.5rem;
+  }
+
+  textarea {
+    border-radius: 0.5em;
+    font-size: 1.7 rem;
+  }
+
+  button {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+    font-weight: 700;
+    text-align: center;
+    padding: 0.5em;
+    margin-top: 1.5rem;
+    margin-bottom: 0;
+    border-radius: 5px;
+    background-color: #042c99;
+    color: #eff5f5;
+    align-self: flex-end;
+    cursor: pointer;
+  }
+
+  aside {
+    text-align: center;
+    margin-top: 2rem;
+    font-size: 1rem;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  
+  h1 {
+    margin-top: 0;
+    font-size: 4rem;
+    color: #f53302;
+    text-shadow: 1px 1px 2px rgb(238, 231, 231), 0 0 1em rgb(55, 55, 134),
+      0 0 0.2em rgb(3, 126, 89);
+    text-align: center;
+  }
+
+  h2{
+    font-size: 2rem;
+    margin-top: 0;
+    color: #f53302;
+    text-shadow: 1px 1px 2px rgb(238, 231, 231), 0 0 1em rgb(55, 55, 134),
+      0 0 0.2em rgb(3, 126, 89);
+    text-align: center;
+  }
+
+  form {
+    background-image: url(https://img.freepik.com/vector-gratis/fondo-tecnologia-digital-efecto-luz-azul-naranja_1017-27423.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    margin: 0;
+    padding: 0;
+    padding: 1rem;
+    margin-left: 12rem;
+    margin-right: 12rem;
+    margin-top: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    align-content: start;
+    text-align: start;
+  }
+
+  label {
+    color: #eff5f5;
+    font-size: 1.2rem;
+  }
+
+  input {
+    padding: 0.5em;
+    font-size: 1.2rem;
+    border-radius: 0.5em;
+  }
+
+  textarea {
+    border-radius: 0.5em;
+    font-size: 1.2rem;
+  }
+
+  button {
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 1.2rem;
+    font-weight: 700;
+    text-align: center;
+    padding: 0.5em;
+    margin-top: 10px;
+    margin-bottom: 0;
+    border-radius: 5px;
+    background-color: #042c99;
+    color: #eff5f5;
+    align-self: flex-end;
+    cursor: pointer;
+  }
+  aside {
+    text-align: center;
+    font-size: 1rem;
+    margin-top: 2rem;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  form {
+    background-image: url(https://img.freepik.com/vector-gratis/fondo-tecnologia-digital-efecto-luz-azul-naranja_1017-27423.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    padding-left: 4px;
+    padding: 2rem;
+    margin-left: 18rem;
+    margin-right: 18rem;
+    margin-top: 0.5rem;
+    border-radius: 1em;
+    display: flex;
+    flex-direction: column;
+    align-content: start;
+    text-align: start;
+  }
+}
+

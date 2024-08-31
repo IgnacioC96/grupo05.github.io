@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="OpenDigit" />
+    <meta name="author" content="Grupo 5" />
+    <link rel="stylesheet" href="style-contacto.css" />
+    <link
+      rel="shortcut icon"
+      href="img/open digit logo.jpeg"
+      sizes="16x16 24x24 32x32 48x48"
+    />
+    <title>Contacto</title>
+  </head>
+  <body>
+    <header>
+      <h1>Open Dígit</h1>
+      <form
+        action="https://formsubmit.co/opendigitgroupcontact@gmail.com"
+        enctype="multipart/form-data"
+        method="post"
+        autocomplete="on"
+      >
+        <h2>Contáctanos</h2>
+        <!-- cuerpo de formulario comentario-->
+        <label for="nombre">Nombre </label>
+        <input
+          type="text"
+          name="nombre"
+          id="nombre"
+          placeholder="Ingrese su nombre completo"
+          minlength="2"
+        />
+
+        <label for="correo">Correo </label>
+        <input type="email" name="correo" id="correo" placeholder="Ingrese el correo" required />
+
+        <label for="Asunto">Asunto </label>
+        <input type="text" placeholder="Ingrese el asunto" />
+
+        <label for="consulta">Consulte </label>
+        <textarea
+          name="consulta"
+          id="consulta"
+          cols="15"
+          rows="7"
+          placeholder="ingrese su consulta.. (Max. 500 caracteres)"
+          maxlength="500"
+        ></textarea>
+
+        <button type="submit">Enviar</button>
+      </form>
+      <aside style="color: aliceblue">
+        &copy; Copyright OPEN DIGIT. All Rights Reserved
+      </aside>
+    </header>
+  </body>
+</html>

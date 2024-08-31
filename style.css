@@ -1,0 +1,394 @@
+@import url("https://fonts.googleapis.com/css2?family=New+Amsterdam&display=swap");
+
+* {
+  padding: 0; /*saco los margenes de todos los elementos para que no queden lugares en blanco*/
+  margin: 0; /*saco los margenes de todos los elementos para que no queden lugares en blanco*/
+  text-decoration: none; /*saco el subrayado de todos los elementos*/
+  list-style: none; /*elimino las vinetas de las listas*/
+  box-shadow: border-box; /*contengo a los elementos para que no salgan de su contenedor*/
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif,
+    sans-serif;
+}
+
+h4 {
+  text-align: center;
+  text-transform: uppercase;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+img {
+  max-width: 100%;
+  max-height: auto;
+}
+
+nav {
+  background-color: hsl(
+    240,
+    100%,
+    1%
+  ); /*pongo color de fondo al contenido nav*/
+  height: 60px; /*altura del elemento 80px*/
+  width: 100%; /*abarca toda la pantalla de la pagina;*/
+  padding: 0.5rem;
+  margin: 0;
+  position: sticky;
+  top: 0;
+}
+
+.enlace {
+  position: absolute;
+  padding: 20px 50px;
+}
+
+nav ul {
+  float: right; /*las listas se posicionen a la derecha en la pantalla*/
+  margin-right: 30px; /* con un margen a la derecha de 30px*/
+}
+
+nav ul li {
+  display: inline-block; /* pone los elementos en linea*/
+  line-height: 60px;
+}
+
+nav ul li a {
+  color: #fff;
+  font-size: 1 rem;
+  padding: 7px 13px;
+  border-radius: 10px;
+}
+
+li a:hover {
+  background: #40404d;
+  transition: 0.5s;
+}
+
+.checkboton {
+  color: #fff;
+  float: right;
+  line-height: 80px;
+  margin-right: 40px;
+  margin-top: 10px;
+  cursor: pointer;
+  display: none;
+}
+#check {
+  display: none;
+}
+
+header {
+  min-height: 100vh;
+  background-image: url(https://img.freepik.com/vector-gratis/fondo-tecnologia-digital-efecto-luz-azul-naranja_1017-27423.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  margin: 0;
+  padding: 0;
+}
+header img {
+  width: 100%;
+}
+
+.parrafo-imagen img {
+  width: 80vh;
+}
+
+figcaption {
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+.propuesta-educativa {
+  padding: 0.2em;
+  border-radius: 1em;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  text-align: justify;
+}
+
+article {
+  border: solid 1px #181823;
+  margin: 10px;
+  border-radius: 5px;
+  box-shadow: #e24203 3px 3px 4px;
+}
+
+footer div a {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.contacto a {
+  margin-top: 2rem;
+}
+
+.enlase:link {
+  text-decoration: none;
+  color: #181823;
+}
+.enlase:visited {
+  text-decoration: none;
+  color: #181823;
+}
+
+.enlase:hover {
+  font-weight: 800;
+  color: #fc7300;
+}
+
+aside {
+  text-align: center;
+  margin-top: 1.5rem;
+}
+
+@media screen and (max-width: 678px) {
+  .checkboton {
+    display: block;
+  }
+
+  nav {
+    background-color: hsl(
+      240,
+      100%,
+      1%
+    ); /* pongo color de fondo al contenido nav*/
+    height: 100px; /*altura del elemento 80px*/
+    width: 100%; /*abarca toda la pantalla de la pagina*/
+    padding: 0.2rem;
+    margin: 0;
+    position: sticky;
+    top: 0;
+  }
+
+  ul {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background-color: hsl(240, 100%, 1%);
+    top: 100px;
+    left: -100%;
+    text-align: center;
+    transition: all 0.5s;
+  }
+
+  nav ul li {
+    display: block;
+    margin: 30px 0;
+    line-height: 40px;
+  }
+
+  nav ul li a {
+    font-size: 1.7rem;
+  }
+
+  li a:hover,
+  li a.active {
+    background: none;
+    color: rgb(238, 236, 236);
+  }
+  #check:checked ~ ul {
+    left: 0;
+  }
+
+  h1,
+  h2,
+  h3 {
+    font-family: "New Amsterdam", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    text-align: center;
+  }
+
+  header h1 {
+    font-size: 6rem;
+    margin-top: 0;
+    color: #f53302;
+    text-shadow: 1px 1px 2px rgb(238, 231, 231), 0 0 1em rgb(55, 55, 134),
+      0 0 0.2em rgb(3, 126, 89);
+  }
+
+  header h2 {
+    font-size: 3rem;
+    margin-top: 0;
+    color: #f53302;
+    text-shadow: 1px 1px 2px rgb(238, 231, 231), 0 0 1em rgb(55, 55, 134),
+      0 0 0.2em rgb(3, 126, 89);
+  }
+
+  h2 {
+    font-size: 2rem;
+    margin-top: 5rem;
+  }
+
+  h3 {
+    font-size: 1.5rem;
+  }
+
+  p {
+    font-size: 1.5rem;
+    margin: 1rem;
+    text-align: justify;
+  }
+  .parrafo-imagen {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: justify;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    border: solid 4px #00425a;
+  }
+
+  .propuesta-educativa {
+    padding: 0.5em;
+    margin-top: 1.5rem;
+    border-radius: 1em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: justify;
+  }
+
+  .propuesta-educativa img {
+    padding: 0.2em;
+    border: solid 0.5em #00425a;
+    border-radius: 1em;
+    width: 150px;
+    height: 150px;
+  }
+
+  .noticias {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-left: 4rem;
+    margin-right: 4rem;
+  }
+
+  .noticias img{
+    width: 400px;
+    height: 300px;
+  }
+
+
+  footer {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-content: center;
+    margin: 0;
+    margin-top: 3rem;
+  }
+}
+
+@media screen and (min-width: 679px) {
+  h1,
+  h2,
+  h3 {
+    font-family: "New Amsterdam", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    text-align: center;
+  }
+
+  header h1 {
+    font-size: 7rem;
+    margin-top: 0;
+    color: #f53302;
+    text-shadow: 1px 1px 2px rgb(238, 231, 231), 0 0 1em rgb(55, 55, 134),
+      0 0 0.2em rgb(3, 126, 89);
+  }
+  header h2 {
+    font-size: 3.5rem;
+    margin-top: 0;
+    color: #f53302;
+    text-shadow: 1px 1px 2px rgb(238, 231, 231), 0 0 1em rgb(55, 55, 134),
+      0 0 0.2em rgb(3, 126, 89);
+  }
+
+  h2 {
+    font-size: 2.5rem;
+    margin-top: 3rem;
+  }
+
+  h3 {
+    font-size: 2rem;
+  }
+
+  p {
+    font-size: 1.5rem;
+    margin: 1rem;
+    text-align: justify;
+  }
+  .parrafo-imagen {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-evenly;
+    text-align: justify;
+    margin-left: 5rem;
+    margin-right: 5rem;
+    border: solid 4px #00425a;
+  }
+  .parrafo-imagen img {
+    width: 450px;
+    height: 380px;
+  }
+
+  .propuesta-educativa {
+    padding: 0.5em;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    border-radius: 1em;
+    display: flex;
+    flex-direction: row wrap;
+    justify-content: space-around;
+    text-align: justify;
+  }
+
+  .propuesta-educativa img {
+    padding: 0.2em;
+    border: solid 0.5em #00425a;
+    border-radius: 1em;
+    width: 100px;
+    height: 100px;
+  }
+
+  .noticias {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: nowrap;
+  }
+
+  .noticias img{
+    width: 250px;
+    height: 280px;
+  }
+
+  footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin: 0;
+    margin-top: 8rem;
+  }
+  aside {
+    margin-top: 50px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .propuesta-educativa img {
+    padding: 0.2em;
+    border: solid 0.5em #00425a;
+    border-radius: 1em;
+    width: 180px;
+    height: 200px;
+  }
+}
